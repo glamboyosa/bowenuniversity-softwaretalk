@@ -1,0 +1,17 @@
+# How would that work ?
+
+// using REST to return _some_ data
+object.keys(playerData).map(el=> {
+return {
+name: playerData[el].name,
+kit_no: playerData[el].kit_no
+}
+})
+
+//using GraphQL to return _just_ the data we want
+query PlayersDetails {
+getPlayersDetails {
+name
+kit_no
+}
+}
