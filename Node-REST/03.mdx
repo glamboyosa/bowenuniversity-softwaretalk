@@ -1,0 +1,17 @@
+# Why do we need Node frameworks ?
+
+Just with clientside apps as application logic grows and becomes more complex code becomes more difficult to maintain,
+scale, add more features. It becomes unpleasant fast.
+
+http.createServer((request,response)=> {
+if(request.url==="/"){
+response.end("You are home")
+}
+if(request.url==="/users"){
+response.end("You are on the users page")
+}
+if(request.url==="/about"){
+response.end("You are on the about page")
+}
+response.end("Error 404")
+})
